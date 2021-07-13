@@ -13,7 +13,7 @@ body {
 }
     </style>';
     
-    if($td->get_iframe($USER)){
+    if($td->get_iframe($USER) !== ""){
     echo "<iframe width='100%' height='100%' frameborder='0'  src=".$td->get_iframe($USER)."/>";
     }else{
         header("Location: /");
