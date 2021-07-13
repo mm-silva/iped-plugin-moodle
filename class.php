@@ -16,7 +16,7 @@ body {
     if($td->get_iframe($USER) !== ""){
     echo "<iframe width='100%' height='100%' frameborder='0'  src=".$td->get_iframe($USER)."/>";
     }else{
-        header("Location: /");
+        redirect("/", 'O curso que você tentou acessar não existe ou não está liberado.', 10);
     }
 
 ?>
